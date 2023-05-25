@@ -13,6 +13,6 @@ import lombok.NoArgsConstructor;
 public class TrelloBadgesDto {
     @JsonProperty("votes")
     private int votes;
-    @JsonProperty("attachments")
-    private AttachmentByType attachments;
+    @JsonProperty("attachmentsByType")
+    private AttachmentByType attachmentsByType;
 }
