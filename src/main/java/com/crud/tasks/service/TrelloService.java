@@ -11,8 +11,6 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 import java.util.List;
 
-
-
 @Service
 @RequiredArgsConstructor
 public class TrelloService {

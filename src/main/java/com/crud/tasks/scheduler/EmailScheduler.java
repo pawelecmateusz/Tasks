@@ -30,4 +30,16 @@ public class EmailScheduler {
                 )
         );
     }
+
+    @Scheduled(cron = "0 0 10 * * *")
+    public void sendDailyMail() {
+        simpleEmailService.sendDaily(
+                new Mail(
+                        adminConfig.getAdminMail(),
+                        SUBJECT,
+                        null,
+                        null
+                )
+        );
+    }
 }
